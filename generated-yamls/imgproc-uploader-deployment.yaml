@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: imgproc-uploader
+  labels:
+    app: imgproc-uploader
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imgproc-uploader
+  template:
+    metadata:
+      labels:
+        app: imgproc-uploader
+    spec:
+      containers:
+      - name: imgproc-uploader
+        image: shemathomas/imgproc-uploader:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: imgproc-uploader
+spec:
+  selector:
+    app: imgproc-uploader
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP
+

@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mobilenet-infer
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/shemathomas/mobilenet-infer:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MODEL_PATH
+              value: "mobilenetv2-10.onnx"
+

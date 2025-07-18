@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mobilenet-infer
+  labels:
+    app: mobilenet-infer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mobilenet-infer
+  template:
+    metadata:
+      labels:
+        app: mobilenet-infer
+    spec:
+      containers:
+        - name: mobilenet-infer
+          image: shemathomas/mobilenet-infer-local:latest
+          imagePullPolicy: Always
+          env:
+            - name: IMAGE_URLS
+              value: "file://data/images/cat.jpeg"
+          ports:
+            - containerPort: 8000  # only needed if running HTTP server like FastAPI
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+      imagePullSecrets:
+        - name: dockerhub-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mobilenet-infer
+spec:
+  selector:
+    app: mobilenet-infer
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: ClusterIP
+
