@@ -1,7 +1,0 @@
-Workload,Records,Threads,Latency_s,CPU_Util_Percent,Memory_MB
-native_st,1000,1,.237,105%,15.62
-native_mt,1000,5,.217,165%,15.00
-native_mt,10000,5,.978,166%,35.78
-native_st,10000,1,1.433,100%,35.91
-native_st,10000,1,1.471,100%,34.55
-native_mt,10000,5,.382,428%,28.84

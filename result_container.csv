@@ -1,3 +1,0 @@
-Workload,Records,BatchSize,Threads,Spinup_s,Latency_s,Spindown_s,CPU_Util_Percent,Memory_MB
-container_st,10000,5,1,1.974,1.667,.757,103.03,82.09
-container_mt,10000,5,5,1.872,.590,.865,,N/A

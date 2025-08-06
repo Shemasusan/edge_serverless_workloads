@@ -1,1 +1,0 @@
-http://telemetry-serverless.default.svc.cluster.local
