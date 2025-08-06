@@ -1,0 +1,35 @@
+[INFO] Native mode – processing from local filesystem
+[INFO] Launching process for /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_4_40ce81c1c9a9405cb9706019ce94b8ed.json
+[INFO] Launching process for /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_2_9f7442feebab4d2296eb5f52bb1733d0.json
+[INFO] Launching process for /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_0_81980f853a8a47fa98e052a5a239d3fe.json
+[INFO] Launching process for /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_3_30a1eb8156a04987b8bd1387ae3b6c0c.json
+[INFO] Launching process for /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_1_fc8ae0ec1de6417b99f8557f9ec1a890.json
+[INFO] Processed /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_3_30a1eb8156a04987b8bd1387ae3b6c0c.json, results saved to /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_3_30a1eb8156a04987b8bd1387ae3b6c0c_output.json
+[INFO] Processed /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_4_40ce81c1c9a9405cb9706019ce94b8ed.json, results saved to /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_4_40ce81c1c9a9405cb9706019ce94b8ed_output.json
+[INFO] Processed /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_0_81980f853a8a47fa98e052a5a239d3fe.json, results saved to /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_0_81980f853a8a47fa98e052a5a239d3fe_output.json
+[INFO] Processed /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_2_9f7442feebab4d2296eb5f52bb1733d0.json, results saved to /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_2_9f7442feebab4d2296eb5f52bb1733d0_output.json
+[INFO] Processed /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_1_fc8ae0ec1de6417b99f8557f9ec1a890.json, results saved to /home/shema_thomas/project/work/testbench/workloads/json-telemetry-pipeline_mtp_workaround/data/output/telemetry_1_fc8ae0ec1de6417b99f8557f9ec1a890_output.json
+[INFO] All files processed in parallel.
+	Command being timed: "python3 -m app.process_data"
+	User time (seconds): 14.92
+	System time (seconds): 2.17
+	Percent of CPU this job got: 729%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 265396
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 718948
+	Voluntary context switches: 1972
+	Involuntary context switches: 73
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

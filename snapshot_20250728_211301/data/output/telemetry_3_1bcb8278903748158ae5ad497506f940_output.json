@@ -1,0 +1,19 @@
+{
+  "batch_0": {
+    "vehicle_count": {
+      "min": 0,
+      "max": 20,
+      "mean": 9.9412
+    },
+    "avg_speed": {
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "occupancy": {
+      "min": null,
+      "max": null,
+      "mean": null
+    }
+  }
+}

@@ -1,0 +1,97 @@
+#!/bin/bash
+set -e
+
+# Move to script directory (project root)
+cd "$(dirname "$0")"
+
+MODE=$1             # native_st or native_mt
+RECORDS=$2          # records per file
+PROCS=$3            # number of files (ST) or threads (MT)
+
+LOGFILE="run_metrics_${MODE}.log"
+CSVFILE="result_native.csv"
+
+if [[ -z "$MODE" || -z "$RECORDS" || -z "$PROCS" ]]; then
+  echo "Usage: $0 {native_st|native_mt} <no_of_records> <batch_size|thread_count>"
+  exit 1
+fi
+
+# Mode setup
+if [[ "$MODE" == "native_st" ]]; then
+  export THREADED=false
+  export CORE_COUNT=1
+  export FILES_TO_GENERATE=$PROCS
+  export MODE_O=native_st
+elif [[ "$MODE" == "native_mt" ]]; then
+  export THREADED=true
+  export CORE_COUNT=$PROCS
+  export FILES_TO_GENERATE=$PROCS
+  export MODE_O=native_mt
+else
+  echo "[ERROR] Invalid mode: $MODE"
+  exit 1
+fi
+
+export COUNT=$RECORDS
+
+mkdir -p data/input data/output
+rm -f data/output/*.json "$LOGFILE" mem.log
+
+echo "[INFO] Step 1: Generating JSON files..."
+python3 -m app.generate_data
+
+echo "[INFO] Step 2: Running only processing workload ($MODE)..."
+
+start=$(date +%s%N)
+/usr/bin/time -f "MAX_RSS_KB=%M" -o mem.log python3 -m app.process_data 2>&1 | tee "$LOGFILE" & PID=$!
+
+# Monitor CPU & cores
+CPU_TOTAL=0
+SAMPLES=0
+CORE_SET=()
+
+while ps -p $PID > /dev/null; do
+  PIDS=$(ps --ppid $PID -o pid= | awk '{print $1}')
+  PIDS="$PID $PIDS"
+
+  CPU_NOW=0
+  for p in $PIDS; do
+    CPU=$(ps -p $p -o %cpu= | awk '{sum += $1} END {print sum}')
+    CPU_NOW=$(echo "$CPU_NOW + $CPU" | bc)
+    THREADS=$(ps -L -p $p -o psr= | grep -v "PSR" | sort -n | uniq)
+    for core in $THREADS; do
+      if [[ ! " ${CORE_SET[*]} " =~ " $core " ]]; then
+        CORE_SET+=("$core")
+      fi
+    done
+  done
+
+  CPU_TOTAL=$(echo "$CPU_TOTAL + $CPU_NOW" | bc)
+  SAMPLES=$((SAMPLES + 1))
+  sleep 1
+done
+
+wait $PID
+end=$(date +%s%N)
+
+# Compute metrics
+LATENCY_SEC=$(echo "scale=3; ($end - $start)/1000000000" | bc)
+CPU_UTIL=$(echo "scale=2; $CPU_TOTAL / $SAMPLES" | bc)
+MEM_UTIL_KB=$(grep MAX_RSS_KB mem.log | cut -d= -f2)
+MEM_UTIL_MB=$(echo "scale=2; $MEM_UTIL_KB / 1024" | bc)
+CORE_USED=${#CORE_SET[@]}
+
+echo ""
+echo "===== METRICS (Processing only) ====="
+echo "Latency (s):         $LATENCY_SEC"
+echo "CPU Utilization (%): $CPU_UTIL"
+echo "Memory Usage (MB):   $MEM_UTIL_MB"
+echo "CPU Cores Used:      $CORE_USED"
+
+# Write CSV
+if [ ! -f "$CSVFILE" ]; then
+  echo "Workload,Records,Core_Count,Cores_Used,Latency_s,CPU_Util_Percent,Memory_MB" >> "$CSVFILE"
+fi
+
+echo "$MODE_O,$RECORDS,$CORE_COUNT,$CORE_USED,$LATENCY_SEC,$CPU_UTIL,$MEM_UTIL_MB" >> "$CSVFILE"
+

@@ -1,0 +1,3 @@
+Workload,Records,Core_Count,Latency_s,CPU_Util_Percent,Memory_MB,CPU_Cores_Used
+native_st,100000,1,9.953,174.5,276.15,2
+native_mt,100000,5,3.380,505.6,259.17,2

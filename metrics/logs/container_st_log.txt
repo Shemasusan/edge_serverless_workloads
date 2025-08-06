@@ -1,0 +1,2 @@
+[INFO] Native mode – processing from local filesystem
+[INFO] All files processed sequentially.

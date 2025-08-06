@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telemetry-container-serverless-idle-st-deployment
+  labels:
+    app: telemetry-container-serverless-idle-st
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: telemetry-container-serverless-idle-st
+  template:
+    metadata:
+      labels:
+        app: telemetry-container-serverless-idle-st
+    spec:
+      containers:
+        - name: telemetry
+          image: shemathomas/jsontelemetry_multi_thread_multi_proc:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: COUNT
+              value: "2000"
+            - name: THREADS
+              value: "16"
+            - name: THREADED
+              value: "false"
+            - name: MODE
+              value: "once"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: telemetry-container-serverless-idle-st-service
+  labels:
+    app: telemetry-container-serverless-idle-st
+spec:
+  selector:
+    app: telemetry-container-serverless-idle-st
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
