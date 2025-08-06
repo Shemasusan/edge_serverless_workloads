@@ -1,0 +1,23 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: telemetry-serverless
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "5"
+    spec:
+      containers:
+        - image: shemathomas/jsontelemetry_multi_proc_sep:latest
+          command: ["uvicorn"]
+          args: ["app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MODE
+              value: "burst"
+            - name: SUBMODE
+              value: "st"
