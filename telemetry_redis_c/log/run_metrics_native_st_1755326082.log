@@ -1,0 +1,36 @@
+[INFO] Running in mode: native_st (synchronous)
+[INFO] Found 10 keys in Redis
+[INFO] Thread 139709798577792 processed key: telemetry_6_c9961c11-12ce-4619-8145-19bdd56e8367 -> telemetry_6_c9961c11-12ce-4619-8145-19bdd56e8367_processed
+[INFO] Thread 139709798577792 processed key: telemetry_1_c1c7e263-edd4-4bd6-b8c5-522a0f7de5cc -> telemetry_1_c1c7e263-edd4-4bd6-b8c5-522a0f7de5cc_processed
+[INFO] Thread 139709798577792 processed key: telemetry_0_801cef15-6a7d-43c5-b03c-166d36d93964 -> telemetry_0_801cef15-6a7d-43c5-b03c-166d36d93964_processed
+[INFO] Thread 139709798577792 processed key: telemetry_4_80c848d0-e401-467e-bb2b-7b1c68508fa1 -> telemetry_4_80c848d0-e401-467e-bb2b-7b1c68508fa1_processed
+[INFO] Thread 139709798577792 processed key: telemetry_7_94e1d165-0a07-4f3d-b2e7-23a8a5810708 -> telemetry_7_94e1d165-0a07-4f3d-b2e7-23a8a5810708_processed
+[INFO] Thread 139709798577792 processed key: telemetry_3_438da07d-1d3a-45ec-98ea-1a7434bcb7fd -> telemetry_3_438da07d-1d3a-45ec-98ea-1a7434bcb7fd_processed
+[INFO] Thread 139709798577792 processed key: telemetry_2_0eca96fa-2e68-48db-a9ac-b01c915e32e1 -> telemetry_2_0eca96fa-2e68-48db-a9ac-b01c915e32e1_processed
+[INFO] Thread 139709798577792 processed key: telemetry_5_5ee41476-85d1-437b-a24a-3e463512c402 -> telemetry_5_5ee41476-85d1-437b-a24a-3e463512c402_processed
+[INFO] Thread 139709798577792 processed key: telemetry_9_052f6cbd-f193-48a0-82e7-52afd05b9b5a -> telemetry_9_052f6cbd-f193-48a0-82e7-52afd05b9b5a_processed
+[INFO] Thread 139709798577792 processed key: telemetry_8_27d2e90c-1b95-49fa-bbf2-2552b53b3492 -> telemetry_8_27d2e90c-1b95-49fa-bbf2-2552b53b3492_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "app/processor 10000 10"
+	User time (seconds): 0.01
+	System time (seconds): 0.00
+	Percent of CPU this job got: 88%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6400
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 444
+	Voluntary context switches: 44
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
