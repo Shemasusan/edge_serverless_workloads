@@ -1,0 +1,45 @@
+[INFO] Running telemetry processing workload inside container...
+[INFO] MODE=container_mt, CORE_COUNT=10, THREADED=true, RECORDS=1000000, BATCH_SIZE=10
+[INFO] Running in mode: container_mt (synchronous)
+[INFO] Found 10 keys in Redis
+[INFO] Thread 131682023798400 processed key: telemetry_1_616553840786450 -> telemetry_1_616553840786450_processed
+[INFO] Thread 131681982826048 processed key: telemetry_5_616553858101907 -> telemetry_5_616553858101907_processed
+[INFO] Thread 131681987024448 processed key: telemetry_3_616553853721474 -> telemetry_3_616553853721474_processed
+[INFO] Thread 131682003818048 processed key: telemetry_8_616553878173626 -> telemetry_8_616553878173626_processed
+[INFO] Thread 131682012214848 processed key: telemetry_9_616553910315128 -> telemetry_9_616553910315128_processed
+[INFO] Thread 131681991222848 processed key: telemetry_4_616553903943218 -> telemetry_4_616553903943218_processed
+[INFO] Thread 131682016413248 processed key: telemetry_6_616553974527850 -> telemetry_6_616553974527850_processed
+[INFO] Thread 131681995421248 processed key: telemetry_2_616553844703689 -> telemetry_2_616553844703689_processed
+[INFO] Thread 131681999619648 processed key: telemetry_0_616553314274528 -> telemetry_0_616553314274528_processed
+[INFO] Thread 131682008016448 processed key: telemetry_7_616553856092865 -> telemetry_7_616553856092865_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "./processor 1000000 10"
+	User time (seconds): 307.24
+	System time (seconds): 24.80
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:02.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13542560
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 7940839
+	Voluntary context switches: 2567
+	Involuntary context switches: 19208
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+===== METRICS (container_mt) =====
+Latency (s):         182.710
+CPU Utilization (%): 181.7
+Memory Usage (MB):   13225.15
+CPU Cores Used:      2
+Cores List:          46 17

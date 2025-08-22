@@ -1,0 +1,61 @@
+[INFO] Running in mode: native_mt (synchronous)
+[INFO] Found 100 keys in Redis
+[INFO] Thread 126109437904448 processed key: telemetry_84_277332410520459 -> telemetry_84_277332410520459_processed
+[INFO] Thread 126109457348224 processed key: telemetry_9_277332419346830 -> telemetry_9_277332419346830_processed
+[INFO] Thread 126109425309248 processed key: telemetry_18_277332392007337 -> telemetry_18_277332392007337_processed
+[INFO] Thread 126109442102848 processed key: telemetry_25_277332424245723 -> telemetry_25_277332424245723_processed
+[INFO] Thread 126109421110848 processed key: telemetry_5_277332432633107 -> telemetry_5_277332432633107_processed
+[INFO] Thread 126109429507648 processed key: telemetry_75_277332394932242 -> telemetry_75_277332394932242_processed
+[INFO] Thread 126109433706048 processed key: telemetry_72_277332470744902 -> telemetry_72_277332470744902_processed
+[INFO] Thread 126109433706048 processed key: telemetry_56_277332397103237 -> telemetry_56_277332397103237_processed
+[INFO] Thread 126109429507648 processed key: telemetry_64_277332437099776 -> telemetry_64_277332437099776_processed
+[INFO] Thread 126109421110848 processed key: telemetry_21_277332381290219 -> telemetry_21_277332381290219_processed
+[INFO] Thread 126109437904448 processed key: telemetry_49_277332422659719 -> telemetry_49_277332422659719_processed
+[INFO] Thread 126109442102848 processed key: telemetry_99_277332436991350 -> telemetry_99_277332436991350_processed
+[INFO] Thread 126109425309248 processed key: telemetry_29_277332435493225 -> telemetry_29_277332435493225_processed
+[INFO] Thread 126109457348224 processed key: telemetry_42_277332399752326 -> telemetry_42_277332399752326_processed
+[INFO] Thread 126109429507648 processed key: telemetry_2_277332414809919 -> telemetry_2_277332414809919_processed
+[INFO] Thread 126109421110848 processed key: telemetry_87_277332409117959 -> telemetry_87_277332409117959_processed
+[INFO] Thread 126109442102848 processed key: telemetry_50_277332414532314 -> telemetry_50_277332414532314_processed
+[INFO] Thread 126109457348224 processed key: telemetry_92_277332416251518 -> telemetry_92_277332416251518_processed
+[INFO] Thread 126109425309248 processed key: telemetry_76_277332432412401 -> telemetry_76_277332432412401_processed
+[INFO] Thread 126109433706048 processed key: telemetry_81_277332426079773 -> telemetry_81_277332426079773_processed
+[INFO] Thread 126109437904448 processed key: telemetry_16_277332435549778 -> telemetry_16_277332435549778_processed
+[INFO] Thread 126109429507648 processed key: telemetry_80_277332467937519 -> telemetry_80_277332467937519_processed
+[INFO] Thread 126109442102848 processed key: telemetry_71_277332428355058 -> telemetry_71_277332428355058_processed
+[INFO] Thread 126109457348224 processed key: telemetry_83_277332453703484 -> telemetry_83_277332453703484_processed
+[INFO] Thread 126109421110848 processed key: telemetry_44_277332431549510 -> telemetry_44_277332431549510_processed
+[INFO] Thread 126109425309248 processed key: telemetry_11_277332433551200 -> telemetry_11_277332433551200_processed
+[INFO] Thread 126109433706048 processed key: telemetry_19_277332436842906 -> telemetry_19_277332436842906_processed
+[INFO] Thread 126109110707776 processed key: telemetry_58_277332454135333 -> telemetry_58_277332454135333_processed
+[INFO] Thread 126109114906176 processed key: telemetry_85_277332432589678 -> telemetry_85_277332432589678_processed
+[INFO] Thread 126109135898176 processed key: telemetry_35_277332425892406 -> telemetry_35_277332425892406_processed
+[INFO] Thread 126108439619136 processed key: telemetry_78_277332427792193 -> telemetry_78_277332427792193_processed
+[INFO] Thread 126108448015936 processed key: telemetry_91_277332423497683 -> telemetry_91_277332423497683_processed
+[INFO] Thread 126108477404736 processed key: telemetry_34_277332402368265 -> telemetry_34_277332402368265_processed
+[INFO] Thread 126106178909760 processed key: telemetry_88_277332422980915 -> telemetry_88_277332422980915_processed
+[INFO] Thread 126107403662912 processed key: telemetry_8_277332412703926 -> telemetry_8_277332412703926_processed
+[INFO] ThreadCommand terminated by signal 8
+	Command being timed: "app/processor 10000 100"
+	User time (seconds): 6.83
+	System time (seconds): 22.99
+	Percent of CPU this job got: 3719%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1066972
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 278295
+	Voluntary context switches: 44246
+	Involuntary context switches: 212
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

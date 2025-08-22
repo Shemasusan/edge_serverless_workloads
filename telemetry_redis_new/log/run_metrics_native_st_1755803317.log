@@ -1,0 +1,36 @@
+[INFO] Running in mode: native_st (synchronous)
+[INFO] Found 10 keys in Redis
+[INFO] Thread 126504457856640 processed key: telemetry_0_519561588219565 -> telemetry_0_519561588219565_processed
+[INFO] Thread 126504457856640 processed key: telemetry_6_519561594189396 -> telemetry_6_519561594189396_processed
+[INFO] Thread 126504457856640 processed key: telemetry_8_519561595144814 -> telemetry_8_519561595144814_processed
+[INFO] Thread 126504457856640 processed key: telemetry_7_519561595072142 -> telemetry_7_519561595072142_processed
+[INFO] Thread 126504457856640 processed key: telemetry_5_519561594617907 -> telemetry_5_519561594617907_processed
+[INFO] Thread 126504457856640 processed key: telemetry_9_519561594207539 -> telemetry_9_519561594207539_processed
+[INFO] Thread 126504457856640 processed key: telemetry_2_519561594193459 -> telemetry_2_519561594193459_processed
+[INFO] Thread 126504457856640 processed key: telemetry_3_519561594477504 -> telemetry_3_519561594477504_processed
+[INFO] Thread 126504457856640 processed key: telemetry_4_519561595267600 -> telemetry_4_519561595267600_processed
+[INFO] Thread 126504457856640 processed key: telemetry_1_519561594523728 -> telemetry_1_519561594523728_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "app/processor 10000 10"
+	User time (seconds): 0.41
+	System time (seconds): 0.01
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21276
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4650
+	Voluntary context switches: 203
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

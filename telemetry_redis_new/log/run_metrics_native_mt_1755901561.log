@@ -1,0 +1,36 @@
+[INFO] Running in mode: native_mt (synchronous)
+[INFO] Found 10 keys in Redis
+[INFO] Thread 127468055598720 processed key: telemetry_1_617807631544330 -> telemetry_1_617807631544330_processed
+[INFO] Thread 127468039030336 processed key: telemetry_0_617807055155260 -> telemetry_0_617807055155260_processed
+[INFO] Thread 127468055598720 processed key: telemetry_2_617807673437973 -> telemetry_2_617807673437973_processed
+[INFO] Thread 127468039030336 processed key: telemetry_8_617807691629975 -> telemetry_8_617807691629975_processed
+[INFO] Thread 127468055598720 processed key: telemetry_5_617807641154565 -> telemetry_5_617807641154565_processed
+[INFO] Thread 127468039030336 processed key: telemetry_6_617807646217279 -> telemetry_6_617807646217279_processed
+[INFO] Thread 127468055598720 processed key: telemetry_7_617807637446919 -> telemetry_7_617807637446919_processed
+[INFO] Thread 127468039030336 processed key: telemetry_9_617807702037934 -> telemetry_9_617807702037934_processed
+[INFO] Thread 127468055598720 processed key: telemetry_4_617807671568363 -> telemetry_4_617807671568363_processed
+[INFO] Thread 127468039030336 processed key: telemetry_3_617807652763809 -> telemetry_3_617807652763809_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "app/processor 1000000 10"
+	User time (seconds): 48.41
+	System time (seconds): 5.08
+	Percent of CPU this job got: 187%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2786136
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2574468
+	Voluntary context switches: 2986
+	Involuntary context switches: 455
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

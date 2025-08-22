@@ -1,0 +1,29 @@
+[INFO] Running telemetry processing workload inside container...
+[INFO] MODE=container_st, CORE_COUNT=1, THREADED=false, RECORDS=10, BATCH_SIZE=1
+[INFO] Running in mode: container_st (synchronous)
+[INFO] Found 1 keys in Redis
+[INFO] Thread 128948274509440 processed key: telemetry_0_428805511087998 -> telemetry_0_428805511087998_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "./processor 10 1"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 83%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 333
+	Voluntary context switches: 8
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
