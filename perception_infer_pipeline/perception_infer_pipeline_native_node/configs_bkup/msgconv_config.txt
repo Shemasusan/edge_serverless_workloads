@@ -1,0 +1,22 @@
+[sensor0]
+enable=1
+type=Camera
+id=KITTI_CAM_0
+location=0.0;0.0;0.0
+description=KITTI Camera
+coordinate=0.0;0.0;0.0
+
+[place0]
+enable=1
+id=0
+type=road
+name=KITTI_ROAD
+location=0.0;0.0;0.0
+coordinate=0.0;0.0;0.0
+
+[analytics0]
+enable=1
+id=ANA_0
+description=YOLO Object Detection
+source=YOLOv4-tiny
+version=1.0
