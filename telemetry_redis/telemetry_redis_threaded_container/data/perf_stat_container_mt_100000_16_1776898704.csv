@@ -1,0 +1,16 @@
+# started on Wed Apr 22 22:58:24 2026
+
+4.90,msec,task-clock,1.78%,5010314,100.00,0.883,CPUs utilized
+1,,context-switches,33.33%,5010314,100.00,203.934,/sec
+0,,cpu-migrations,0.00%,5010314,100.00,0.000,/sec
+306,,page-faults,0.11%,5010314,100.00,62.404,K/sec
+11655701,,cycles,1.69%,1119741,22.00,2.377,GHz
+17162997,,instructions,2.26%,1605241,32.00,1.47,insn per cycle
+3679326,,branches,0.22%,2606630,52.00,750.340,M/sec
+56923,,branch-misses,2.24%,4494648,89.00,1.55,of all branches
+5389714,,cache-references,0.68%,5010314,100.00,1.099,G/sec
+72021,,cache-misses,1.94%,5010314,100.00,1.34,of all cache refs
+5361105,,L1-dcache-loads,0.55%,5010314,100.00,1.093,G/sec
+66720,,L1-dcache-load-misses,6.62%,3405073,67.00,1.24,of all L1-dcache accesses
+148401,,LLC-loads,2.06%,2403684,47.00,30.264,M/sec
+57813,,LLC-load-misses,10.21%,515666,10.00,38.96,of all LL-cache accesses

@@ -1,0 +1,714 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 7  of event 'cycles:P'
+# Event count (approx.): 1941513
+#
+# Children      Self  Command    Shared Object          Symbol                        
+# ........  ........  .........  .....................  ..............................
+#
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync_handler
+            |
+            ---el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc
+            |
+            ---el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] do_el0_svc
+            |
+            ---do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+            |
+            ---el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] invoke_syscall
+            |
+            ---invoke_syscall
+               |          
+               |--97.94%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          do_filp_open
+               |          path_openat
+               |          open_last_lookups
+               |          lookup_fast
+               |          __d_lookup_rcu
+               |          
+                --2.02%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          free_pgd_range
+                          free_pud_range
+                          tlb_remove_table
+                          __get_free_pages
+                          __alloc_pages
+                          get_page_from_freelist
+
+    97.94%    97.94%  processor  [kernel.kallsyms]      [k] __d_lookup_rcu
+            |
+            ---0xffff8d0c6a53
+               0xffff8d0c2b93
+               0xffff8d0c172f
+               0xffff8d0c4153
+               0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0c6a53
+            |
+            ---0xffff8d0c6a53
+               0xffff8d0c2b93
+               0xffff8d0c172f
+               0xffff8d0c4153
+               0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0c2b93
+            |
+            ---0xffff8d0c2b93
+               0xffff8d0c172f
+               0xffff8d0c4153
+               0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0c172f
+            |
+            ---0xffff8d0c172f
+               0xffff8d0c4153
+               0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0c4153
+            |
+            ---0xffff8d0c4153
+               0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0aeaf3
+            |
+            ---0xffff8d0aeaf3
+               _dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] _dl_catch_exception
+            |
+            ---_dl_catch_exception
+               0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0ae59b
+            |
+            ---0xffff8d0ae59b
+               0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0b3ed7
+            |
+            ---0xffff8d0b3ed7
+               0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0b154f
+            |
+            ---0xffff8d0b154f
+               0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0b0ff3
+            |
+            ---0xffff8d0b0ff3
+               0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff8d0c730c
+            |
+            ---0xffff8d0c730c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_openat
+            |
+            ---__arm64_sys_openat
+               do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] do_sys_openat2
+            |
+            ---do_sys_openat2
+               do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] do_filp_open
+            |
+            ---do_filp_open
+               path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] path_openat
+            |
+            ---path_openat
+               open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] open_last_lookups
+            |
+            ---open_last_lookups
+               lookup_fast
+               __d_lookup_rcu
+
+    97.94%     0.00%  processor  [kernel.kallsyms]      [k] lookup_fast
+            |
+            ---lookup_fast
+               __d_lookup_rcu
+
+     2.02%     2.02%  processor  [kernel.kallsyms]      [k] get_page_from_freelist
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_execve
+            |
+            ---__arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+            |
+            ---do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve
+            |
+            ---bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve.part.0
+            |
+            ---bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] exec_binprm
+            |
+            ---exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] search_binary_handler
+            |
+            ---search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] load_elf_binary
+            |
+            ---load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] setup_arg_pages
+            |
+            ---setup_arg_pages
+               shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] shift_arg_pages
+            |
+            ---shift_arg_pages
+               free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] free_pgd_range
+            |
+            ---free_pgd_range
+               free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] free_pud_range
+            |
+            ---free_pud_range
+               tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] tlb_remove_table
+            |
+            ---tlb_remove_table
+               __get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] __get_free_pages
+            |
+            ---__get_free_pages
+               __alloc_pages
+               get_page_from_freelist
+
+     2.02%     0.00%  processor  [kernel.kallsyms]      [k] __alloc_pages
+            |
+            ---__alloc_pages
+               get_page_from_freelist
+
+     0.04%     0.04%  perf-exec  [kernel.kallsyms]      [k] perf_event_enable_on_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] invoke_syscall
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] __arm64_sys_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve.part.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] exec_binprm
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] search_binary_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] load_elf_binary
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] begin_new_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] perf_event_exec
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

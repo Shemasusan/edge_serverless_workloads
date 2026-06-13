@@ -1,0 +1,12 @@
+Workload,Core_Count,Records,BatchSize,Latency_s,CPU_Util_Percent,Memory_MB,CPU_Cores_Used
+container_mt,100,1000,100,.332,578.3,47.50,1
+container_mt,10,1000,10,.162,141.9,20.62,1
+container_mt,10,10000,10,.398,796.4,138.10,1
+container_mt,10,10000,10,1.891,177.6,137.92,1
+container_mt,10,1000000,10,182.710,181.7,13225.15,2
+container_mt,10,1000000,10,36.719,863.6,13249.80,1
+container_mt,10,1000000,10,36.452,864.1,13348.35,1
+container_mt,1,1000000,1,30.382,99.5,1360.91,1
+container_mt,10,1000000,10,34.401,926.5,13302.75,2
+container_mt,10,1000000,10,37.362,872.1,13185.93,2
+container_mt,10,1000000,10,198.297,156.4,2792.95,1

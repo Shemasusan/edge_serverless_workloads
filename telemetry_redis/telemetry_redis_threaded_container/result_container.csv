@@ -1,0 +1,6 @@
+Workload,Records,BatchSize,Thread_count,Latency_s,CPU_Util_Percent,Memory_MB,CPU_Cores_Used,Cores_List,LogFile,PerfFile,Latency_full
+container_st,100000,16,0.046,21.7,11.00,2,/app/data/log_container_st_100000_16_1776898212.log,/app/data/perf_stat_container_st_100000_16_1776898212.csv,19.801
+container_mt,100000,16,0.043,46.5,11.00,2,/app/data/log_container_mt_100000_16_1776898383.log,/app/data/perf_stat_container_mt_100000_16_1776898383.csv,19.723
+container_mt,100000,16,0.043,46.5,11.00,2,/app/data/log_container_mt_100000_16_1776898612.log,/app/data/perf_stat_container_mt_100000_16_1776898612.csv,19.703
+container_mt,100000,16,0.045,44.4,11.00,2,/app/data/log_container_mt_100000_16_1776898704.log,/app/data/perf_stat_container_mt_100000_16_1776898704.csv,19.701
+container_mt,100000,16,0.045,44.4,11.00,2,/app/data/log_container_mt_100000_16_1776898736.log,/app/data/perf_stat_container_mt_100000_16_1776898736.csv,19.713

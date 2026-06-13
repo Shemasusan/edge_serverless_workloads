@@ -1,0 +1,36 @@
+[INFO] Running in mode: container_mt (synchronous)
+[INFO] Found 10 keys in Redis
+[INFO] Thread 125905990354560 processed key: telemetry_0_618135639087950 -> telemetry_0_618135639087950_processed
+[INFO] Thread 125905982699072 processed key: telemetry_1_618136151803867 -> telemetry_1_618136151803867_processed
+[INFO] Thread 125905990354560 processed key: telemetry_4_618136178060483 -> telemetry_4_618136178060483_processed
+[INFO] Thread 125905982699072 processed key: telemetry_2_618136227447664 -> telemetry_2_618136227447664_processed
+[INFO] Thread 125905990354560 processed key: telemetry_7_618136181924443 -> telemetry_7_618136181924443_processed
+[INFO] Thread 125905982699072 processed key: telemetry_3_618136253891061 -> telemetry_3_618136253891061_processed
+[INFO] Thread 125905990354560 processed key: telemetry_8_618136193490852 -> telemetry_8_618136193490852_processed
+[INFO] Thread 125905982699072 processed key: telemetry_5_618136150493062 -> telemetry_5_618136150493062_processed
+[INFO] Thread 125905990354560 processed key: telemetry_6_618136169140300 -> telemetry_6_618136169140300_processed
+[INFO] Thread 125905982699072 processed key: telemetry_9_618136401944660 -> telemetry_9_618136401944660_processed
+[INFO] Processing completed for all Redis keys
+	Command being timed: "./processor 1000000 10"
+	User time (seconds): 301.17
+	System time (seconds): 9.02
+	Percent of CPU this job got: 156%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:18.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2859988
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 6356746
+	Voluntary context switches: 658
+	Involuntary context switches: 262445
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

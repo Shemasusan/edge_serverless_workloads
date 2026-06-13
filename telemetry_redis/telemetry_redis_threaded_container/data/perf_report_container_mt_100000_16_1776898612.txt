@@ -1,0 +1,823 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 7  of event 'cycles:P'
+# Event count (approx.): 1313110
+#
+# Children      Self  Command    Shared Object          Symbol                        
+# ........  ........  .........  .....................  ..............................
+#
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync_handler
+            |
+            ---el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc
+            |
+            ---el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] do_el0_svc
+            |
+            ---do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+            |
+            ---el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] invoke_syscall
+            |
+            ---invoke_syscall
+               |          
+               |--98.12%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          do_vmi_munmap
+               |          do_vmi_align_munmap
+               |          __split_vma
+               |          vma_complete
+               |          mas_store_prealloc
+               |          mas_wr_store_entry.isra.0
+               |          mas_wr_bnode
+               |          mas_store_b_node
+               |          mas_mab_cp
+               |          
+                --1.84%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          arch_align_stack
+                          get_random_u16
+
+    98.12%    98.12%  processor  [kernel.kallsyms]      [k] mas_mab_cp
+            |
+            ---0xffff9ef10a53
+               0xffff9ef0cb93
+               0xffff9ef0b72f
+               0xffff9ef0e153
+               0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9ef10a53
+            |
+            ---0xffff9ef10a53
+               0xffff9ef0cb93
+               0xffff9ef0b72f
+               0xffff9ef0e153
+               0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9ef0cb93
+            |
+            ---0xffff9ef0cb93
+               0xffff9ef0b72f
+               0xffff9ef0e153
+               0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9ef0b72f
+            |
+            ---0xffff9ef0b72f
+               0xffff9ef0e153
+               0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9ef0e153
+            |
+            ---0xffff9ef0e153
+               0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9eef8af3
+            |
+            ---0xffff9eef8af3
+               _dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] _dl_catch_exception
+            |
+            ---_dl_catch_exception
+               0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9eef859b
+            |
+            ---0xffff9eef859b
+               0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9eefde2f
+            |
+            ---0xffff9eefde2f
+               0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9eefd7e3
+            |
+            ---0xffff9eefd7e3
+               0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9ef11534
+            |
+            ---0xffff9ef11534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_mmap
+            |
+            ---__arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] ksys_mmap_pgoff
+            |
+            ---ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] vm_mmap_pgoff
+            |
+            ---vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] do_mmap
+            |
+            ---do_mmap
+               mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] mmap_region
+            |
+            ---mmap_region
+               __mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] __mmap_region
+            |
+            ---__mmap_region
+               do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] do_vmi_munmap
+            |
+            ---do_vmi_munmap
+               do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] do_vmi_align_munmap
+            |
+            ---do_vmi_align_munmap
+               __split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] __split_vma
+            |
+            ---__split_vma
+               vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] vma_complete
+            |
+            ---vma_complete
+               mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] mas_store_prealloc
+            |
+            ---mas_store_prealloc
+               mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] mas_wr_store_entry.isra.0
+            |
+            ---mas_wr_store_entry.isra.0
+               mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] mas_wr_bnode
+            |
+            ---mas_wr_bnode
+               mas_store_b_node
+               mas_mab_cp
+
+    98.12%     0.00%  processor  [kernel.kallsyms]      [k] mas_store_b_node
+            |
+            ---mas_store_b_node
+               mas_mab_cp
+
+     1.84%     1.84%  processor  [kernel.kallsyms]      [k] get_random_u16
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_execve
+            |
+            ---__arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+            |
+            ---do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve
+            |
+            ---bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve.part.0
+            |
+            ---bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] exec_binprm
+            |
+            ---exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] search_binary_handler
+            |
+            ---search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] load_elf_binary
+            |
+            ---load_elf_binary
+               setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] setup_arg_pages
+            |
+            ---setup_arg_pages
+               arch_align_stack
+               get_random_u16
+
+     1.84%     0.00%  processor  [kernel.kallsyms]      [k] arch_align_stack
+            |
+            ---arch_align_stack
+               get_random_u16
+
+     0.04%     0.04%  perf-exec  [kernel.kallsyms]      [k] perf_event_enable_on_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] invoke_syscall
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] __arm64_sys_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve.part.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] exec_binprm
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] search_binary_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] load_elf_binary
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] begin_new_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] perf_event_exec
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

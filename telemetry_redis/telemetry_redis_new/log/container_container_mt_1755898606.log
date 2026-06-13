@@ -1,0 +1,34 @@
+[INFO] Running telemetry processing workload inside container...
+[INFO] MODE=container_mt, CORE_COUNT=100, THREADED=true, RECORDS=1000, BATCH_SIZE=100
+[INFO] Running in mode: container_mt (synchronous)
+Command terminated by signal 11
+	Command being timed: "./processor 1000 100"
+	User time (seconds): 1.68
+	System time (seconds): 0.24
+	Percent of CPU this job got: 598%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 48640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 15735
+	Voluntary context switches: 1217
+	Involuntary context switches: 109
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+===== METRICS (container_mt) =====
+Latency (s):         .332
+CPU Utilization (%): 578.3
+Memory Usage (MB):   47.50
+CPU Cores Used:      1
+Cores List:          59

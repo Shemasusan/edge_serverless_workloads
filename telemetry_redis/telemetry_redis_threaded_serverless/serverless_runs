@@ -1,0 +1,4 @@
+./run_serverless.sh  serverless_st 100000 16 1
+./run_serverless.sh  serverless_mt 100000 16 2
+./run_serverless.sh  serverless_mt 100000 16 4
+./run_serverless.sh  serverless_mt 100000 16 8

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-server
+  namespace: default
+  labels:
+    app: redis-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-server
+  template:
+    metadata:
+      labels:
+        app: redis-server
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: camsin-8   # force pod to run on server
+      containers:
+        - name: redis
+          image: redis:7.0
+          ports:
+            - containerPort: 6379
+          resources:
+            limits:
+              memory: "1024Mi"
+              cpu: "1"
+

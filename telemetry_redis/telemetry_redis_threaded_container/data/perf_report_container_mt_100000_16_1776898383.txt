@@ -1,0 +1,694 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 7  of event 'cycles:P'
+# Event count (approx.): 2078965
+#
+# Children      Self  Command    Shared Object          Symbol                          
+# ........  ........  .........  .....................  ................................
+#
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync_handler
+            |
+            ---el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc
+            |
+            ---el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] do_el0_svc
+            |
+            ---do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+            |
+            ---el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    99.97%     0.00%  processor  [kernel.kallsyms]      [k] invoke_syscall
+            |
+            ---invoke_syscall
+               |          
+               |--97.97%--__arm64_sys_openat
+               |          do_sys_openat2
+               |          getname
+               |          getname_flags.part.0
+               |          strncpy_from_user
+               |          __check_object_size
+               |          __check_object_size.part.0
+               |          check_heap_object
+               |          
+                --1.99%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          expand_stack_locked
+                          expand_downwards
+                          security_vm_enough_memory_mm
+                          __vm_enough_memory
+                          percpu_counter_add_batch
+
+    97.97%    97.97%  processor  [kernel.kallsyms]      [k] check_heap_object
+            |
+            ---0xffff9c524a53
+               0xffff9c520b93
+               0xffff9c51f72f
+               0xffff9c522153
+               0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c524a53
+            |
+            ---0xffff9c524a53
+               0xffff9c520b93
+               0xffff9c51f72f
+               0xffff9c522153
+               0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c520b93
+            |
+            ---0xffff9c520b93
+               0xffff9c51f72f
+               0xffff9c522153
+               0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c51f72f
+            |
+            ---0xffff9c51f72f
+               0xffff9c522153
+               0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c522153
+            |
+            ---0xffff9c522153
+               0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c50caf3
+            |
+            ---0xffff9c50caf3
+               _dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] _dl_catch_exception
+            |
+            ---_dl_catch_exception
+               0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c50c59b
+            |
+            ---0xffff9c50c59b
+               0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c511ed7
+            |
+            ---0xffff9c511ed7
+               0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c50f54f
+            |
+            ---0xffff9c50f54f
+               0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c50eff3
+            |
+            ---0xffff9c50eff3
+               0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffff9c52530c
+            |
+            ---0xffff9c52530c
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_openat
+            |
+            ---__arm64_sys_openat
+               do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] do_sys_openat2
+            |
+            ---do_sys_openat2
+               getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] getname
+            |
+            ---getname
+               getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] getname_flags.part.0
+            |
+            ---getname_flags.part.0
+               strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] strncpy_from_user
+            |
+            ---strncpy_from_user
+               __check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] __check_object_size
+            |
+            ---__check_object_size
+               __check_object_size.part.0
+               check_heap_object
+
+    97.97%     0.00%  processor  [kernel.kallsyms]      [k] __check_object_size.part.0
+            |
+            ---__check_object_size.part.0
+               check_heap_object
+
+     1.99%     1.99%  processor  [kernel.kallsyms]      [k] percpu_counter_add_batch
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_execve
+            |
+            ---__arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+            |
+            ---do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve
+            |
+            ---bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve.part.0
+            |
+            ---bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] exec_binprm
+            |
+            ---exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] search_binary_handler
+            |
+            ---search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] load_elf_binary
+            |
+            ---load_elf_binary
+               setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] setup_arg_pages
+            |
+            ---setup_arg_pages
+               expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] expand_stack_locked
+            |
+            ---expand_stack_locked
+               expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] expand_downwards
+            |
+            ---expand_downwards
+               security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] security_vm_enough_memory_mm
+            |
+            ---security_vm_enough_memory_mm
+               __vm_enough_memory
+               percpu_counter_add_batch
+
+     1.99%     0.00%  processor  [kernel.kallsyms]      [k] __vm_enough_memory
+            |
+            ---__vm_enough_memory
+               percpu_counter_add_batch
+
+     0.03%     0.03%  perf-exec  [kernel.kallsyms]      [k] perf_event_enable_on_exec
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync_handler
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_el0_svc
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] invoke_syscall
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] __arm64_sys_execve
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve.part.0
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] exec_binprm
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] search_binary_handler
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] load_elf_binary
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] begin_new_exec
+     0.03%     0.00%  perf-exec  [kernel.kallsyms]      [k] perf_event_exec
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

@@ -1,0 +1,671 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 7  of event 'cycles:P'
+# Event count (approx.): 2037319
+#
+# Children      Self  Command    Shared Object          Symbol                        
+# ........  ........  .........  .....................  ..............................
+#
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0t_64_sync_handler
+            |
+            ---el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc
+            |
+            ---el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] do_el0_svc
+            |
+            ---do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+            |
+            ---el0_svc_common.constprop.0
+               invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    99.96%     0.00%  processor  [kernel.kallsyms]      [k] invoke_syscall
+            |
+            ---invoke_syscall
+               |          
+               |--97.93%--__arm64_sys_mmap
+               |          ksys_mmap_pgoff
+               |          vm_mmap_pgoff
+               |          do_mmap
+               |          mmap_region
+               |          __mmap_region
+               |          vm_area_alloc
+               |          kmem_cache_alloc
+               |          arch_local_irq_restore
+               |          
+                --2.03%--__arm64_sys_execve
+                          do_execveat_common.isra.0
+                          bprm_execve
+                          bprm_execve.part.0
+                          exec_binprm
+                          search_binary_handler
+                          load_elf_binary
+                          setup_arg_pages
+                          shift_arg_pages
+                          tlb_finish_mmu
+                          call_rcu
+                          arch_local_irq_restore
+
+    97.93%    97.93%  processor  [kernel.kallsyms]      [k] arch_local_irq_restore
+            |
+            ---0xffffbe7e2a53
+               0xffffbe7deb93
+               0xffffbe7dd72f
+               0xffffbe7e0153
+               0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7e2a53
+            |
+            ---0xffffbe7e2a53
+               0xffffbe7deb93
+               0xffffbe7dd72f
+               0xffffbe7e0153
+               0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7deb93
+            |
+            ---0xffffbe7deb93
+               0xffffbe7dd72f
+               0xffffbe7e0153
+               0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7dd72f
+            |
+            ---0xffffbe7dd72f
+               0xffffbe7e0153
+               0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7e0153
+            |
+            ---0xffffbe7e0153
+               0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7caaf3
+            |
+            ---0xffffbe7caaf3
+               _dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] _dl_catch_exception
+            |
+            ---_dl_catch_exception
+               0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7ca59b
+            |
+            ---0xffffbe7ca59b
+               0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7cfe2f
+            |
+            ---0xffffbe7cfe2f
+               0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7cf7a7
+            |
+            ---0xffffbe7cf7a7
+               0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  ld-linux-aarch64.so.1  [.] 0x0000ffffbe7e3534
+            |
+            ---0xffffbe7e3534
+               el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_mmap
+            |
+            ---__arm64_sys_mmap
+               ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] ksys_mmap_pgoff
+            |
+            ---ksys_mmap_pgoff
+               vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] vm_mmap_pgoff
+            |
+            ---vm_mmap_pgoff
+               do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] do_mmap
+            |
+            ---do_mmap
+               mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] mmap_region
+            |
+            ---mmap_region
+               __mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] __mmap_region
+            |
+            ---__mmap_region
+               vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] vm_area_alloc
+            |
+            ---vm_area_alloc
+               kmem_cache_alloc
+               arch_local_irq_restore
+
+    97.93%     0.00%  processor  [kernel.kallsyms]      [k] kmem_cache_alloc
+            |
+            ---kmem_cache_alloc
+               arch_local_irq_restore
+
+     2.03%     2.03%  processor  [kernel.kallsyms]      [k] arch_local_irq_restore
+            |
+            ---el0t_64_sync
+               el0t_64_sync_handler
+               el0_svc
+               do_el0_svc
+               el0_svc_common.constprop.0
+               invoke_syscall
+               __arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] __arm64_sys_execve
+            |
+            ---__arm64_sys_execve
+               do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+            |
+            ---do_execveat_common.isra.0
+               bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve
+            |
+            ---bprm_execve
+               bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] bprm_execve.part.0
+            |
+            ---bprm_execve.part.0
+               exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] exec_binprm
+            |
+            ---exec_binprm
+               search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] search_binary_handler
+            |
+            ---search_binary_handler
+               load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] load_elf_binary
+            |
+            ---load_elf_binary
+               setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] setup_arg_pages
+            |
+            ---setup_arg_pages
+               shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] shift_arg_pages
+            |
+            ---shift_arg_pages
+               tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] tlb_finish_mmu
+            |
+            ---tlb_finish_mmu
+               call_rcu
+               arch_local_irq_restore
+
+     2.03%     0.00%  processor  [kernel.kallsyms]      [k] call_rcu
+            |
+            ---call_rcu
+               arch_local_irq_restore
+
+     0.04%     0.04%  perf-exec  [kernel.kallsyms]      [k] perf_event_enable_on_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0t_64_sync_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_el0_svc
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] el0_svc_common.constprop.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] invoke_syscall
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] __arm64_sys_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] do_execveat_common.isra.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] bprm_execve.part.0
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] exec_binprm
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] search_binary_handler
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] load_elf_binary
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] begin_new_exec
+     0.04%     0.00%  perf-exec  [kernel.kallsyms]      [k] perf_event_exec
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

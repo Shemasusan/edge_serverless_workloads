@@ -1,0 +1,108 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: telemetry-processor-$TIMESTAMP
+  namespace: ${NAMESPACE}
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        run: telemetry-processor-$TIMESTAMP   # <-- this ensures your script finds the pod
+    spec:
+      restartPolicy: Never
+      hostPID: true
+      dnsPolicy: ClusterFirstWithHostNet
+      nodeSelector:
+        type: pi
+      containers:
+      - name: proc
+        image: shemathomas/jsontelemetry_pi_perf_arm_new_stracetrial_serverless_n:latest
+        resources:
+          requests:
+            ephemeral-storage: "1Gi"
+          limits:
+            ephemeral-storage: "2Gi"
+        env:
+        - name: MODE
+          value: "${MODE}"
+        - name: THREAD_COUNT
+          value: "${THREAD_COUNT}"
+        - name: RECORDS
+          value: "${RECORDS}"
+        - name: BATCH_SIZE
+          value: "${FILES_TO_GENERATE}"
+        - name: REDIS_HOST
+          value: "${REDIS_HOST}"
+        - name: REDIS_PORT
+          value: "${REDIS_PORT}"
+        - name: KEY_PATTERN
+          value: "telemetry_*"
+        - name: CORE_COUNT
+          value: "2"
+        securityContext:
+          allowPrivilegeEscalation: true
+          capabilities:
+            add: ["SYS_ADMIN","SYS_PTRACE","PERFMON","SYS_RESOURCE","SYS_NICE"]
+        volumeMounts:
+        - name: sysfs
+          mountPath: /sys
+        - name: sysdebug
+          mountPath: /sys/kernel/debug
+        - name: libmodules
+          mountPath: /lib/modules
+        - name: perfbin
+          mountPath: /usr/bin/perf
+          readOnly: true
+        - name: perfout
+          mountPath: /app/data
+        - name: hostlib
+          mountPath: /lib
+          readOnly: true
+        - name: hostlib64
+          mountPath: /lib64
+          readOnly: true
+        - name: usrlib
+          mountPath: /usr/lib
+          readOnly: true
+        - name: usrlib64
+          mountPath: /usr/lib/aarch64-linux-gnu
+          readOnly: true
+      volumes:
+      - name: sysfs
+        hostPath:
+          path: /sys
+          type: Directory
+      - name: sysdebug
+        hostPath:
+          path: /sys/kernel/debug
+          type: Directory
+      - name: libmodules
+        hostPath:
+          path: /lib/modules
+          type: Directory
+      - name: perfbin
+        hostPath:
+          path: /usr/bin/perf
+          type: File
+      - name: perfout
+        hostPath:
+          path: /var/log/telemetry-proc
+          type: DirectoryOrCreate
+      - name: hostlib
+        hostPath:
+          path: /lib
+          type: Directory
+      - name: hostlib64
+        hostPath:
+          path: /lib64
+          type: Directory
+      - name: usrlib
+        hostPath:
+          path: /usr/lib
+          type: Directory
+      - name: usrlib64
+        hostPath:
+          path: /usr/lib/aarch64-linux-gnu
+          type: Directory
+

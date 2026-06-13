@@ -1,0 +1,39 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: telemetry-serverless
+  namespace: default
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "1"   # ✅ Must be here
+    spec:
+      containers:
+        - image: shemathomas/jsontelemetry_c_trial@sha256:0eac16500738b8e5a2776461655519edb2b4d9f4ab58954ad46f12603929fa3b
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MODE
+              value: serverless_st
+            - name: RECORDS
+              value: "100"
+            - name: BATCH_SIZE
+              value: "10"
+            - name: REDIS_HOST
+              value: redis.default.svc.cluster.local
+            - name: REDIS_PORT
+              value: "6379"
+            - name: CORE_COUNT
+              value: "1"
+            - name: THREADED
+              value: "false"
+          readinessProbe:
+            httpGet:
+              path: /status
+              port: 8000
+            initialDelaySeconds: 2
+            periodSeconds: 2
+            successThreshold: 1
+            timeoutSeconds: 1
+

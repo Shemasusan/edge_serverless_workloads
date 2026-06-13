@@ -1,0 +1,119 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: telemetry-processor-${TIMESTAMP}
+  namespace: ${NAMESPACE}
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        run: telemetry-processor-${TIMESTAMP}
+    spec:
+      restartPolicy: Never
+      nodeSelector:
+        type: pi
+      dnsPolicy: ClusterFirst
+      containers:
+      - name: proc
+        image: shemathomas/jsontelemetry_pi_perf_arm_new_stracetrial_serverless_n:latest
+        command: ["taskset"]
+        args: ["-c", "0,1", "/app/run_entrypoint.sh"]
+        securityContext:
+          allowPrivilegeEscalation: true
+          capabilities:
+            add: ["SYS_ADMIN","SYS_PTRACE","PERFMON","SYS_RESOURCE","SYS_NICE"]
+        resources:
+          requests:
+            ephemeral-storage: "1Gi"
+          limits:
+            ephemeral-storage: "1.5Gi"
+        env:
+          - name: MODE
+            value: "${MODE}"
+          - name: THREAD_COUNT
+            value: "${THREAD_COUNT}"
+          - name: RECORDS
+            value: "${RECORDS}"
+          - name: BATCH_SIZE
+            value: "${FILES_TO_GENERATE}"
+          - name: REDIS_HOST
+            value: "${REDIS_HOST}"
+          - name: REDIS_PORT
+            value: "${REDIS_PORT}"
+          - name: RUN_ID
+            value: "${RUN_ID}"
+          - name: CORE_COUNT
+            value: "2"
+        volumeMounts:
+          - name: perf
+            mountPath: /usr/bin/perf
+            readOnly: true
+          - name: strace
+            mountPath: /usr/bin/strace
+            readOnly: true
+          - name: libunwind
+            mountPath: /usr/lib/aarch64-linux-gnu/libunwind.so.8
+            readOnly: true
+          - name: libelf
+            mountPath: /usr/lib/aarch64-linux-gnu/libelf.so.1
+            readOnly: true
+          - name: libdw
+            mountPath: /usr/lib/aarch64-linux-gnu/libdw.so.1
+            readOnly: true
+          - name: libslang
+            mountPath: /usr/lib/aarch64-linux-gnu/libslang.so.2
+            readOnly: true
+          - name: libpython
+            mountPath: /usr/lib/aarch64-linux-gnu/libpython3.12.so.1.0
+            readOnly: true
+          - name: libnuma
+            mountPath: /usr/lib/aarch64-linux-gnu/libnuma.so.1
+            readOnly: true
+          - name: libtraceevent
+            mountPath: /usr/lib/aarch64-linux-gnu/libtraceevent.so.1
+            readOnly: true
+          - name: perfout
+            mountPath: /app/data
+      volumes:
+        - name: perf
+          hostPath:
+            path: /usr/lib/linux-tools/6.8.0-1038-raspi/perf
+            type: File
+        - name: strace
+          hostPath:
+            path: /usr/bin/strace
+            type: File
+        - name: libunwind
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libunwind-aarch64.so.8
+            type: File
+        - name: libelf
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libelf.so.1
+            type: File
+        - name: libdw
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libdw.so.1
+            type: File
+        - name: libslang
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libslang.so.2
+            type: File
+        - name: libpython
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libpython3.12.so.1.0
+            type: File
+        - name: libnuma
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libnuma.so.1
+            type: File
+        - name: libtraceevent
+          hostPath:
+            path: /usr/lib/aarch64-linux-gnu/libtraceevent.so.1
+            type: File
+        - name: perfout
+          hostPath:
+            path: /var/log/telemetry-proc
+            type: DirectoryOrCreate
+

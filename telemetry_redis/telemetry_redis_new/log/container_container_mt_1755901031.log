@@ -1,0 +1,5 @@
+[INFO] Running telemetry processing workload inside container...
+[INFO] MODE=container_mt, CORE_COUNT=1, THREADED=true, RECORDS=1000000, BATCH_SIZE=1
+[INFO] Running in mode: container_mt (synchronous)
+
+got 3 SIGTERM/SIGINTs, forcefully exiting

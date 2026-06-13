@@ -1,0 +1,20 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: telemetry-serverless
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/shemathomas/jsontelemetry_redis_cpp_new_trial@sha256:9e5fcac7c2c0cceaaf3641dd68b9fd1a7a9ba62b207d56631e499ee3764b35e0
+          env:
+            - name: MODE
+              value: "serverless_st"
+            - name: REDIS_HOST
+              value: "redis.default.svc.cluster.local"
+            - name: REDIS_PORT
+              value: "6379"
+          ports:
+            - containerPort: 8000
+
